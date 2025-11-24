@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的一天</title>
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+  <div class="container">
+    <h1>我的一天</h1>
+
+    <!-- 新增任务 -->
+    <div class="new-task">
+      <img class="todo-plus-icon" src="plus.png" alt="">
+      <input type="text" placeholder="添加任务">
+      <button class="add-btn">添加</button>
+    </div>
+
+    <!-- 待办 -->
+    <div class="todo-list card">
+      <div class="todo-item">
+        <div class="todo-item-icon">
+          <img class="todo-icon" src="circle.png" alt="">
+        </div>
+        <div class="todo-content">
+          <div class="todo-text">下班后去拿快递</div>
+          <div class="todo-type">任务</div>
+        </div>
+        <div class="todo-star-icon">
+          <img class="star-icon" src="star-empty.png" alt="">
+        </div>
+        <button class="del-btn">删除</button>
+      </div>
+    </div>
+
+    <!-- 已完成 -->
+    <div class="done-list card"></div>
+  </div>
+
+  <!-- 模板 -->
+  <div class="todo-template">
+    <div class="todo-item">
+      <div class="todo-item-icon">
+        <img class="todo-icon" src="circle.png" alt="">
+      </div>
+      <div class="todo-content">
+        <div class="todo-text"></div>
+        <div class="todo-type">任务</div>
+      </div>
+      <div class="todo-star-icon">
+        <img class="star-icon" src="star-empty.png" alt="">
+      </div>
+      <button class="del-btn">删除</button>
+    </div>
+  </div>
+
+  <script src="todo.js"></script>
+</body>
+</html>
