@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的一天</title>
+  <title>我的一天 - 待办事项</title>
   <link rel="stylesheet" href="todo.css">
 </head>
 <body>
@@ -12,32 +12,19 @@
 
     <!-- 新增任务 -->
     <div class="new-task">
-      <img class="todo-plus-icon" src="plus.png" alt="">
-      <input type="text" placeholder="添加任务">
-      <button class="add-btn">添加</button>
+      <img class="todo-plus-icon" src="plus.png" alt="添加">
+      <input type="text" placeholder="添加新任务..." id="taskInput">
+      <button class="add-btn" id="addBtn">添加</button>
     </div>
 
-    <!-- 待办（初始空） -->
-    <div class="todo-list card"></div>
+    <!-- 待办 -->
+    <div class="todo-list card" id="todoList">
+      <div class="empty-state">暂无待办任务</div>
+    </div>
 
-    <!-- 已完成（初始空） -->
-    <div class="done-list card"></div>
-  </div>
-
-  <!-- 模板 -->
-  <div class="todo-template">
-    <div class="todo-item">
-      <div class="todo-item-icon">
-        <img class="todo-icon" src="circle.png" alt="">
-      </div>
-      <div class="todo-content">
-        <div class="todo-text"></div>
-        <div class="todo-type">任务</div>
-      </div>
-      <div class="todo-star-icon">
-        <img class="star-icon" src="star-empty.png" alt="">
-      </div>
-      <button class="del-btn">删除</button>
+    <!-- 已完成 -->
+    <div class="done-list card" id="doneList">
+      <div class="empty-state">暂无已完成任务</div>
     </div>
   </div>
 
